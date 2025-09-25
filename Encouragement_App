@@ -1,0 +1,31 @@
+package myMain;
+
+import java.util.Scanner;
+
+public class MainClass {
+
+    static Scanner userinput = new Scanner(System.in);
+
+    public static void main(String[] args)
+
+    {
+
+                int Age;
+    			String Mood;
+                System.out.print("How old are you?");
+                Age = userinput.nextInt();
+                userinput.nextLine();
+                
+                System.out.print("How are you doing today?");
+                Mood = userinput.nextLine();
+                userinput.nextLine();
+                
+                if (Age > 12 && Age < 20) {System.out.println("You're still a teenager and you have your whole life ahead of you");}
+                else if (Age > 85) {System.out.println("Wow you've lived a long life");}
+                if (Mood.equalsIgnoreCase("Good")) {System.out.println("I'm glad to hear you're doing well");}
+                else if (Mood.equalsIgnoreCase("Stressed")) {System.out.println("Take some time to destress with hobbies");}
+                else {System.out.println("I believe in you, everything is going to be OK");}
+                
+    }
+
+}
